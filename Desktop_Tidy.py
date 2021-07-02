@@ -3,7 +3,7 @@ import glob
 import shutil
 from os import path
 
-#define buckets
+#define buckets (include v_ prefix) 
 v_other           = ['.xml', '.log', '.recover', '.writingout', '.crdownload']
 v_pdf_documents   = ['.pdf', '.pptx', '.docx', '.txt']
 v_images          = ['.jpeg','.jpg','.svg','.png','.PNG','.mp4','.mp3', '.tif', '.JPG']
@@ -19,6 +19,8 @@ v_vpn             = ['.ovpn']
 
 #define your main location here:
 main_location   = r'/Users/alexburnett/Downloads'
+
+
 
 #sorter function
 def sorter(file, value, folder):
