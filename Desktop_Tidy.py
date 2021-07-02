@@ -1,10 +1,19 @@
-other=['.xml', '.log', '.recover', '.writingout']
-PDF=['.pdf', '.pptx', '.docx']
-Images=['.jpeg','.jpg','.svg','.png','.PNG','.mp4','.mp3', '.tif', '.JPG']
-excels = ['.xlsx', 'xls', '.csv']
-shapefiles = ['.gpkg', '.shp']
-fme = ['.fmw']
-qgis = ['.qgs','.qgz']
+other           = ['.xml', '.log', '.recover', '.writingout']
+pdf_documents   = ['.pdf', '.pptx', '.docx', '.txt']
+images          = ['.jpeg','.jpg','.svg','.png','.PNG','.mp4','.mp3', '.tif', '.JPG']
+excels          = ['.xlsx', 'xls', '.csv']
+shapefiles      = ['.gpkg', '.shp']
+python          = ['.py', '.pynb', '.ipynb']
+sql             = ['.sql']
+fme             = ['.fmw']
+qgis            = ['.qgs','.qgz']
+disk_images     = ['.dmg', '.app']
+zip_files       = ['.zip']
+
+categories = 
+
+#define your main location here:
+main_location   = r'/Users/alexburnett/Downloads'
 
 pdfLocation=r'C:\Users\AlexanderBurnett\Dropbox (MapStand)\MapStand Team Folder\Alex Burnett\PDFs'
 shapeLocation=r'C:\Users\AlexanderBurnett\Dropbox (MapStand)\MapStand Team Folder\Alex Burnett\Shapefiles'
