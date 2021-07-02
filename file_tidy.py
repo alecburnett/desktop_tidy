@@ -25,7 +25,6 @@ main_location   = r'/Users/alexburnett/Downloads'
 #sorter function
 def sorter(file, value, folder):
     try:
-        print(file)
         if os.path.splitext(file)[1] in value:
             if (path.exists(folder)):
                 shutil.move(file, folder)
@@ -35,17 +34,14 @@ def sorter(file, value, folder):
     except:
       pass
 
-#extract files
+#list files
 files = glob.glob(str(main_location) + '''/*''')
 
 #loop through files
 for file in files:
-  print(file)
-
-  #loop through variables and pass files through sorter functino
+  #loop through variables and pass files through sorter function
   for variable in dir():
     if variable.startswith('v_'):
       value = eval(variable)
       folder =  ( str(main_location) + '/' + str(variable).replace("v_", "") )
-      print(str(value) + str(folder))
       sorter(file, value, folder)
